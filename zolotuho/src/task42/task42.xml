@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pointList xmlns="http://www.it-academy.by"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://www.it-academy.by task42.xsd">
+    <point units="mm">
+        <x>6</x>
+        <y>8</y>
+    </point>
+    <point units="px">
+        <x>1</x>
+        <y>2</y>
+    </point>
+    <point units="cm">
+        <x>5</x>
+        <y>5</y>
+    </point>
+</pointList>
