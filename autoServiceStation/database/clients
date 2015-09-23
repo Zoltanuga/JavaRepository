@@ -1,0 +1,32 @@
+-- --------------------------------------------------------
+-- Хост:                         127.0.0.1
+-- Версия сервера:               5.6.25-log - MySQL Community Server (GPL)
+-- ОС Сервера:                   Win32
+-- HeidiSQL Версия:              8.3.0.4694
+-- --------------------------------------------------------
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+-- Дамп структуры для таблица auto_service_station.clients
+CREATE TABLE IF NOT EXISTS `clients` (
+  `CLIENT_ID` int(11) NOT NULL AUTO_INCREMENT,
+  `FIRST_NAME` varchar(50) DEFAULT '0',
+  `LAST_NAME` varchar(50) DEFAULT '0',
+  `DATE_OF_BIRTH` date DEFAULT NULL,
+  `PHONE` varchar(50) DEFAULT '0',
+  `EMAIL` varchar(50) DEFAULT '0',
+  `ADDRESS` varchar(50) DEFAULT '0',
+  PRIMARY KEY (`CLIENT_ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8;
+
+-- Дамп данных таблицы auto_service_station.clients: ~1 rows (приблизительно)
+/*!40000 ALTER TABLE `clients` DISABLE KEYS */;
+INSERT INTO `clients` (`CLIENT_ID`, `FIRST_NAME`, `LAST_NAME`, `DATE_OF_BIRTH`, `PHONE`, `EMAIL`, `ADDRESS`) VALUES
+	(13, 'vasa', 'pupkin', '1998-12-12', '+37529898887', 'vasa@gmail.com', 'minsk, independance square 4');
+/*!40000 ALTER TABLE `clients` ENABLE KEYS */;
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
