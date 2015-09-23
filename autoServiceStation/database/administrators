@@ -1,0 +1,27 @@
+-- --------------------------------------------------------
+-- Хост:                         127.0.0.1
+-- Версия сервера:               5.6.25-log - MySQL Community Server (GPL)
+-- ОС Сервера:                   Win32
+-- HeidiSQL Версия:              8.3.0.4694
+-- --------------------------------------------------------
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+-- Дамп структуры для таблица auto_service_station.administrators
+CREATE TABLE IF NOT EXISTS `administrators` (
+  `EMAIL` varchar(50) NOT NULL,
+  `PASSWORD` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`EMAIL`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- Дамп данных таблицы auto_service_station.administrators: ~1 rows (приблизительно)
+/*!40000 ALTER TABLE `administrators` DISABLE KEYS */;
+INSERT INTO `administrators` (`EMAIL`, `PASSWORD`) VALUES
+	('xx@gmail.com', '1234');
+/*!40000 ALTER TABLE `administrators` ENABLE KEYS */;
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
